@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking System</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>WanderLuxe Tours</h1>
+    <h1>Book Your Trip</h1>
+    <form class="booking-form" id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" min="1" required><br>
+
+        <label for="message">Special request:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="output"></div>
+    <button onclick="loadBookingDetails()">Notification</button>
+</body>
+
+</html>
